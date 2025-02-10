@@ -106,7 +106,7 @@ void setConstraints(){
 			model->addConstr(edge_t[1][7]<=(edge_length[1]-edge_t[1][5])/2.0+(edge_length[2]/2.0)*edge_t[1][2]/(edge_length[3]/2.0+2.283285348/4.0));
 			model->addConstr(edge_t[1][5]+edge_t[1][4]+2*edge_t[1][7]==edge_length[1]+edge_length[2]);
 			model->addConstr(edge_t[1][10]==edge_t[1][7]);
-			// compatability constraints
+			// compatibility constraints
 			model->addConstr(edge_t[2][5]==0);
 			model->addConstr(edge_t[2][4]==edge_length[2]*(1-edge_t[1][2]/(edge_length[3]/2.0+2.283285348/4.0)));
 			model->addConstr(edge_t[2][7]==(edge_length[2]/2.0)*edge_t[1][2]/(edge_length[3]/2.0+2.283285348/4.0));
@@ -160,7 +160,7 @@ void setConstraints(){
 			model->addConstr(edge_t[1][10]==edge_t[1][13]);
 			model->addConstr(edge_t[1][2]==edge_t[1][13]);
 			model->addConstr(edge_t[1][3]==edge_t[1][13]);
-			// compatability constraints
+			// compatibility constraints
 			model->addConstr(2*edge_t[2][9]+edge_t[2][12]==edge_length[2]);
 			model->addConstr(edge_t[2][1]==edge_t[2][9]);
 			model->addConstr(2*edge_t[3][4]+4*edge_t[3][13]==edge_length[3]);
